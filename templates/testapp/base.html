@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam - Navigation</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <h1>Online Exam</h1>
+        <a href="/">Home</a>
+        <a href="/python">Python Exams</a>
+        <a href="/java">Java Exams</a>
+        <a href="/aptitude">Aptitude Exams</a>
+        <a href="/accounts/login">LogIn</a>
+        <a href="/logout">LogOut</a>
+        <a href="/signup">Sign Up</a>
+    </nav>
+    {% block body_block %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block %}
+<h1>Java Exam Section</h1>
+
+<h2>Exam Overview</h2>
+<p>The Java exam is designed to evaluate your understanding of Java programming fundamentals, object-oriented concepts, data structures, exception handling, and advanced Java features.</p>
+
+<h2>Exam Structure</h2>
+<ul>
+    <li><strong>Duration:</strong> 120 minutes</li>
+    <li><strong>Total Questions:</strong> 60</li>
+    <li><strong>Question Types:</strong> Multiple Choice, True/False, Code Analysis, Debug Code, and Programming Problems</li>
+    <li><strong>Passing Score:</strong> 65%</li>
+</ul>
+
+<h2>Topics Covered</h2>
+<ol>
+    <li><strong>Java Fundamentals</strong> - Syntax, Data types, Variables, Operators, Type casting</li>
+    <li><strong>Control Flow</strong> - If-else, Switch statements, Loops (for, while, do-while)</li>
+    <li><strong>Arrays</strong> - Single and Multi-dimensional arrays, Array operations</li>
+    <li><strong>Object-Oriented Programming</strong> - Classes, Objects, Constructors, this keyword</li>
+    <li><strong>Inheritance</strong> - extends keyword, super keyword, Method overriding</li>
+    <li><strong>Polymorphism</strong> - Method overloading, Runtime polymorphism</li>
+    <li><strong>Abstraction</strong> - Abstract classes, Interfaces, Abstract methods</li>
+    <li><strong>Encapsulation</strong> - Access modifiers, Getters and Setters</li>
+    <li><strong>Exception Handling</strong> - try-catch-finally, throw, throws, Custom exceptions</li>
+    <li><strong>Collections Framework</strong> - ArrayList, LinkedList, HashMap, HashSet, TreeSet</li>
+    <li><strong>String Handling</strong> - String class, StringBuilder, StringBuffer</li>
+    <li><strong>File I/O</strong> - FileReader, FileWriter, BufferedReader, BufferedWriter</li>
+    <li><strong>Multithreading</strong> - Thread class, Runnable interface, Synchronization</li>
+    <li><strong>Packages</strong> - Import statements, Creating packages, Access control</li>
+</ol>
+
+<h2>Question Distribution</h2>
+<ul>
+    <li>Multiple Choice Questions: 30 questions (1 mark each)</li>
+    <li>True/False: 10 questions (0.5 marks each)</li>
+    <li>Code Analysis: 10 questions (2 marks each)</li>
+    <li>Debug Code: 5 questions (3 marks each)</li>
+    <li>Programming Problems: 5 questions (4 marks each)</li>
+</ul>
+
+<h2>Java Exam Specific Rules</h2>
+<ol>
+    <li>Java version used for evaluation: Java 8 or higher</li>
+    <li>All code must follow proper Java naming conventions (camelCase for variables, PascalCase for classes)</li>
+    <li>Include proper package declarations if required</li>
+    <li>Use appropriate access modifiers for classes and methods</li>
+    <li>Code must be properly indented and formatted</li>
+    <li>Import statements should be included where necessary</li>
+    <li>For programming questions, include main method for execution</li>
+    <li>Compilation errors will result in zero marks for that question</li>
+    <li>Use of deprecated methods will result in partial marks deduction</li>
+    <li>Comments explaining logic are recommended</li>
+</ol>
+
+<h2>Sample Questions</h2>
+<h3>Multiple Choice:</h3>
+<p><strong>Q. Which of the following is not a Java feature?</strong></p>
+<p>a) Object-Oriented<br>
+   b) Platform Independent<br>
+   c) Pointer Arithmetic<br>
+   d) Multithreaded</p>
+
+<h3>Code Analysis:</h3>
+<p><strong>Q. What will be the output of the following code?</strong></p>
+<pre>
+public class Test {
+public static void main(String[] args) {
+    String s1 = "Hello";
+    String s2 = "Hello";
+    String s3 = new String("Hello");
+    System.out.println(s1 == s2);
+    System.out.println(s1 == s3);
+}
+}
+</pre>
+
+<h3>Debug Code:</h3>
+<p><strong>Q. Find and fix the errors in the following code:</strong></p>
+<pre>
+public class Calculator {
+public int add(int a, int b) {
+    return a + b;
+}
+
+public int add(int a, int b) {
+    return a + b + 10;
+}
+}
+</pre>
+
+<h3>Programming Problem:</h3>
+<p><strong>Q. Write a Java program to implement a simple Bank Account class with deposit, withdraw, and check balance methods. Include proper exception handling for insufficient balance.</strong></p>
+
+<h2>Important Java Concepts to Remember</h2>
+<ul>
+    <li><strong>Wrapper Classes:</strong> Integer, Double, Boolean, Character</li>
+    <li><strong>Access Modifiers:</strong> public, private, protected, default</li>
+    <li><strong>Non-access Modifiers:</strong> static, final, abstract, synchronized</li>
+    <li><strong>Keywords:</strong> this, super, static, final, abstract, interface</li>
+    <li><strong>String Pool:</strong> Understanding String immutability and memory management</li>
+    <li><strong>equals() vs ==:</strong> Difference between reference and value comparison</li>
+    <li><strong>ArrayList vs Array:</strong> Dynamic vs fixed size</li>
+    <li><strong>Checked vs Unchecked Exceptions:</strong> IOException vs NullPointerException</li>
+</ul>
+
+<h2>Preparation Tips</h2>
+<ul>
+    <li>Practice writing complete Java programs with proper class structure</li>
+    <li>Understand the difference between compilation and runtime errors</li>
+    <li>Master the four pillars of OOP: Abstraction, Encapsulation, Inheritance, Polymorphism</li>
+    <li>Practice tracing code execution, especially with inheritance and polymorphism</li>
+    <li>Review Java API documentation for commonly used classes</li>
+    <li>Work on debugging exercises to identify common errors</li>
+    <li>Practice collection framework operations and their time complexities</li>
+    <li>Understand memory management: Stack vs Heap</li>
+    <li>Review exception hierarchy and how to handle different exception types</li>
+</ul>
+
+<h2>Common Mistakes to Avoid</h2>
+<ul>
+    <li>Forgetting semicolons at the end of statements</li>
+    <li>Incorrect capitalization in keywords and class names</li>
+    <li>Missing curly braces in control structures</li>
+    <li>Comparing strings with == instead of .equals()</li>
+    <li>Not initializing variables before use</li>
+    <li>Incorrect array indexing (ArrayIndexOutOfBoundsException)</li>
+    <li>Missing import statements for classes</li>
+    <li>Forgetting to call super() in constructors when needed</li>
+</ul>
+
+<h2>Resources for Preparation</h2>
+<ul>
+    <li>Oracle Java Documentation and Tutorials</li>
+    <li>Java API Reference Guide</li>
+    <li>Previous exam papers and solutions</li>
+    <li>Online coding platforms: HackerRank, CodeChef, LeetCode</li>
+    <li>Java practice questions and mock tests</li>
+</ul>
+
+<p><strong>Best wishes for your Java exam! Code with confidence!</strong></p>
+{% endblock %}

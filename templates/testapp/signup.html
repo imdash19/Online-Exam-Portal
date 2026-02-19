@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block %}
+<h1>Sign Up Page</h1>
+
+<div>
+    <h2>Create Your Account</h2>
+    <p>Register to access all exams and features on the Online Exam platform.</p>
+
+    <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <p>Already have an account? <a href="/accounts/login">Login Here</a></p>
+
+    <h3>Benefits of Signing Up:</h3>
+    <ul>
+        <li>Access to Java, Python, and Aptitude exams</li>
+        <li>Track your exam scores and progress</li>
+        <li>Receive certificates upon successful completion</li>
+        <li>Get personalized study recommendations</li>
+        <li>Save and resume exams</li>
+    </ul>
+</div>
+{% endblock %}

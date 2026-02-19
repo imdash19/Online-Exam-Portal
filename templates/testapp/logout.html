@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block %}
+<h1>Logout Page</h1>
+
+<div>
+    <h2>You have been successfully logged out!</h2>
+    <p>Thank you for using the Online Exam platform.</p>
+    <p>Your session has ended securely. All your exam progress has been saved.</p>
+    <p>
+        <a href="/accounts/login">Login Again</a>
+    </p>
+
+    <h3>Important Notes:</h3>
+    <ul>
+        <li>Always logout after completing your session for security purposes</li>
+        <li>Do not share your login credentials with anyone</li>
+        <li>Clear browser cache if using a shared computer</li>
+        <li>Contact support if you face any issues with your account</li>
+    </ul>
+
+    <p>For any queries or assistance, please contact our support team.</p>
+    <p><strong>Email:</strong> support@onlineexam.com</p>
+    <p><strong>Phone:</strong> 1800-123-4567</p>
+
+</div>
+{% endblock %}
